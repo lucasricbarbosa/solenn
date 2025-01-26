@@ -16,7 +16,7 @@ function NavigationMenuDropdown() {
           <NavigationMenuTrigger className="text-sm">
             Categorias
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="min-w-72">
+          <NavigationMenuContent className="min-w-72 z-50">
             <NavigationMenuLink>Link</NavigationMenuLink>
           </NavigationMenuContent>
         </NavigationMenuItem>
