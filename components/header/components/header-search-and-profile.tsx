@@ -31,7 +31,7 @@ export function HeaderSearchAndProfile() {
   return (
     <div className="flex items-center gap-2">
       <SearchInput />
-      <Separator className="h-6 mx-2" />
+      <Separator className="h-6 mx-2 bg-white" />
       <Link href={"#"}>
         <Button variant={"ghost"} size={"icon"} className="rounded-full">
           <ShoppingBag className="!size-5" />

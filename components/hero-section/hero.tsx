@@ -11,6 +11,7 @@ import { HeroCarouselItem } from "./carousel/hero-carousel";
 import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
+import AnimatedArrowButton from "../ui/animated-arrow-button";
 
 export function Hero() {
   const [api, setApi] = useState<CarouselApi>();
@@ -31,7 +32,7 @@ export function Hero() {
   }, [api]);
 
   return (
-    <main className="h-[840px] max-w-[2400px] mx-auto bg-foreground max-h-[90dvh] pt-20">
+    <main className="h-[840px] relative max-w-[2400px] mx-auto bg-foreground max-h-[90dvh] pt-20">
       <Carousel
         opts={{
           align: "start",
@@ -61,6 +62,9 @@ export function Hero() {
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
+      </div>
+      <div className="absolute bottom-16 mx-auto left-1/2 -translate-x-1/2">
+        <AnimatedArrowButton text="Compre agora" />
       </div>
     </main>
   );
